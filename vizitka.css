@@ -1,0 +1,103 @@
+/* Жалпы созламалар */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Карточканы экрандын тең ортосуна жайгаштыруу жана жумшак фон */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8; /* Жумшак фон түсү */
+  color: #333333;
+}
+
+/* Карточка стили */
+.card {
+  background-color: #ffffff;
+  width: 350px;
+  padding: 30px 25px;
+  border-radius: 20px; /* Бурчтарын тегеректөө */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Назик көлөкө */
+  text-align: center;
+}
+
+/* Аватар сүрөтү */
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%; /* Сүрөттү толугу менен тегерек кылуу */
+  object-fit: cover;
+  border: 4px solid #e2e8f0;
+  margin-bottom: 15px;
+}
+
+/* Аты-жөнү (h1) */
+.card h1 {
+  font-size: 22px;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+/* Кыскача маалымат */
+.about {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* Хоббилер тизмеси */
+.hobbies-section {
+  text-align: left;
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.hobbies-section h3 {
+  font-size: 14px;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.hobbies-section ul {
+  padding-left: 20px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.hobbies-section li {
+  margin-bottom: 5px;
+}
+
+/* Социалдык тармак шилтемелери */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #0284c7;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  background-color: #0369a1;
+  transform: translateY(-3px); /* Чычканды алып барганда өйдө көтөрүлүү эффект */
+}
